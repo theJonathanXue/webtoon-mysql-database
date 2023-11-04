@@ -31,4 +31,5 @@ I decided to go with MySQL as it is excellent for web applications, its ease of 
 | Webtoon_Genre| webtoon_id   | INT           | Foreign key referencing the Webtoon table |
 |              | genre_id     | INT           | Foreign key referencing the Genre table  |
 
-
+# Challenges
+- setting up MySQL path, resolved with the help of stack overflow: https://stackoverflow.com/questions/5920136/mysql-is-not-recognised-as-an-internal-or-external-command-operable-program-or-b

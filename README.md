@@ -31,5 +31,10 @@ I decided to go with MySQL as it is excellent for web applications, its ease of 
 | Webtoon_Genre| webtoon_id   | INT           | Foreign key referencing the Webtoon table |
 |              | genre_id     | INT           | Foreign key referencing the Genre table  |
 
+# Database creation
+To create my MySQL database, I installed MySQL locally on my windows PC and created the "webtoon" database from the command line. 
+
+Next, I installed the SQLtools extension on Visual Studio Code. After creating a connection to my database I ran my SQL scripts for creating tables and indexes.
+
 # Challenges
 - setting up MySQL path, resolved with the help of stack overflow: https://stackoverflow.com/questions/5920136/mysql-is-not-recognised-as-an-internal-or-external-command-operable-program-or-b

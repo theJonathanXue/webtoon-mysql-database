@@ -1,9 +1,3 @@
-CREATE TABLE Author (
-    author_id INT AUTO_INCREMENT,
-    author_name VARCHAR(255) NOT NULL,
-    PRIMARY KEY (author_id)
-);
-
 CREATE TABLE Genre (
     genre_id INT AUTO_INCREMENT,
     genre_name VARCHAR(255) NOT NULL,
@@ -23,9 +17,7 @@ CREATE TABLE Webtoon (
     google_img_url VARCHAR(255) NOT NULL,
     is_ongoing BOOLEAN,
     day_of_week VARCHAR(10),
-    author_id INT,
     PRIMARY KEY (webtoon_id),
-    FOREIGN KEY (author_id) REFERENCES Author(author_id)
 );
 
 CREATE TABLE Webtoon_Genre (

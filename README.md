@@ -43,7 +43,9 @@ To be able to compare changes in Webtoon data and track how Webtoon.com as a pla
 
 To do this, I have decided to create a Historical_Webtoon table that has a snapshot_date for the date it was taken. The main focus is on the month and year. Data will be scraped the first day of everymonth and a snapshot of the data will be created immediately. 
 
-Another possible approach would be to create a cold database to act as a data warehouse that only contains historical data for analysis and reporting.
+This is perfect as a prototype as it provides a simpler setup, reducing the complexity of managing multiple databases.
+
+Another possible approach would be to create a cold database to act as a data warehouse that only contains historical data for analysis and reporting. I think I would take this approach if I needed to optimize my main database and store a large volumn of data for long-term data retention, compliance, and archival purposes.
 
 # Project next steps
 - **Future Security Measures Implementation:**

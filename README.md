@@ -38,6 +38,43 @@ After that I scraped all webtoons for their author as well as all the other metr
 
 With the scraping and inserting complete, I was finally ready to move on to implementing my backend.
 
+# Monthly snapshots of Webtoon data
+To be able to compare changes in Webtoon data and track how Webtoon.com as a platform grows its library, I want to take a monthly snapshot of my data.
+
+To do this, I have decided to create a Historical_Webtoon table that has a snapshot_date for the date it was taken. The main focus is on the month and year. Data will be scraped the first day of everymonth and a snapshot of the data will be created immediately. 
+
+Another possible approach would be to create a cold database to act as a data warehouse that only contains historical data for analysis and reporting.
+
+# Project next steps
+- **Future Security Measures Implementation:**
+  - Secure sensitive data by implementing encryption.
+  - Use secure connections and enforce access controls and user privileges.
+
+- **Future Regular Maintenance and Optimization:**
+  - Perform routine data backups and index optimizations.
+  - Tune query performance regularly to ensure efficient database operation.
+
+- **Future Scalability and Capacity Planning:**
+  - Design the database architecture for scalability.
+  - Plan for increasing data volumes and user loads with techniques like sharding and clustering.
+
+- **Future Monitoring and Logging Implementation:**
+  - Implement monitoring tools to track database performance.
+  - Set up logging mechanisms for auditing and troubleshooting database activities.
+
+- **Future Data Recovery and Disaster Preparedness:**
+  - Develop a comprehensive data recovery plan including regular backups.
+  - Implement redundant storage and failover systems for quick data restoration in emergencies.
+
+- **Future Compliance and Regulations Adherence:**
+  - Stay informed about industry-specific regulations and data protection laws.
+  - Ensure data integrity and user privacy are maintained according to the relevant standards.
+
+- **Future Version Control and Change Management Setup:**
+  - Establish version control practices for database schema and configurations.
+  - Implement change management protocols to manage version history and facilitate team collaboration.
+
+
 # Challenges
 - setting up MySQL path, resolved with the help of stack overflow: https://stackoverflow.com/questions/5920136/mysql-is-not-recognised-as-an-internal-or-external-command-operable-program-or-b
 - database schema design: I decided to remove the author table since webtoon doesn't have a standardized way of displaying the authors so scraping the information would be very difficult. This does have the upside of making the table relationships less complicated.

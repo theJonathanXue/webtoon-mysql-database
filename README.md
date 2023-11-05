@@ -38,6 +38,9 @@ After that I scraped all webtoons for their author as well as all the other metr
 
 With the scraping and inserting complete, I was finally ready to move on to implementing my backend.
 
+# Creating indexes
+I've decided to not get ahead of myself and leave optimizing my database to after setting up the foundation of my backend. 
+
 # Monthly snapshots of Webtoon data
 To be able to compare changes in Webtoon data and track how Webtoon.com as a platform grows its library, I want to take a monthly snapshot of my data.
 

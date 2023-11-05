@@ -9,9 +9,6 @@ I decided to go with MySQL as it is excellent for web applications, its ease of 
 # Database schema
 | Table Name   | Field        | Type          | Description                            |
 |--------------|--------------|---------------|----------------------------------------|
-| Author       | author_id    | INT           | Unique author ID                       |
-|              | author_name  | VARCHAR(255)  | Name of the author                     |
-|--------------|--------------|---------------|----------------------------------------|
 | Genre        | genre_id     | INT           | Unique genre ID                        |
 |              | genre_name   | VARCHAR(255)  | Genre name                             |
 |--------------|--------------|---------------|----------------------------------------|
@@ -26,7 +23,6 @@ I decided to go with MySQL as it is excellent for web applications, its ease of 
 |              | cover_url    | VARCHAR(255)  | URL to the webtoon cover               |
 |              | is_ongoing   | BOOLEAN       | Indicates if the webtoon is ongoing or not |
 |              | day_of_week  | VARCHAR(10)   | Day of the week the webtoon is updated (if ongoing) |
-|              | author_id    | INT           | Foreign key referencing the Author table |
 |--------------|--------------|---------------|----------------------------------------|
 | Webtoon_Genre| webtoon_id   | INT           | Foreign key referencing the Webtoon table |
 |              | genre_id     | INT           | Foreign key referencing the Genre table  |
@@ -44,3 +40,4 @@ With the scraping and inserting complete, I was finally ready to move on to impl
 
 # Challenges
 - setting up MySQL path, resolved with the help of stack overflow: https://stackoverflow.com/questions/5920136/mysql-is-not-recognised-as-an-internal-or-external-command-operable-program-or-b
+- database schema design: I decided to remove the author table since webtoon doesn't have a standardized way of displaying the authors so scraping the information would be very difficult. This does have the upside of making the table relationships less complicated.

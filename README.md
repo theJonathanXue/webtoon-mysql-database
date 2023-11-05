@@ -76,9 +76,12 @@ Another possible approach would be to create a cold database to act as a data wa
   - Ensure data integrity and user privacy are maintained according to the relevant standards.
 
 - **Future Version Control and Change Management Setup:**
-  - Establish version control practices for database schema and configurations.
+  - Establish version control practices for database schema and configurations using tools such as Git.
   - Implement change management protocols to manage version history and facilitate team collaboration.
 
+- **Database Performance Testing and Benchmarking:**
+  - Conduct performance testing to assess database response times under various loads.
+  - Perform benchmarking to compare the performance of the database with industry standards.
 
 # Challenges
 - setting up MySQL path, resolved with the help of stack overflow: https://stackoverflow.com/questions/5920136/mysql-is-not-recognised-as-an-internal-or-external-command-operable-program-or-b

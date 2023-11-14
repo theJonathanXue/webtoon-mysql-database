@@ -70,6 +70,11 @@ This is perfect as a prototype as it provides a simpler setup, reducing the comp
 
 Another possible approach would be to create a cold database to act as a data warehouse that only contains historical data for analysis and reporting. I think I would take this approach if I needed to optimize my main database and store a large volumn of data for long-term data retention, compliance, and archival purposes.
 
+# User accounts
+I would also like to allow users to create accounts where they can add their favourite webtoons and get recommended similar one's.
+
+I also want a feature where you can keep track of your reading history and automatically open all taps to unread chapters at the click of a button. I want to actually do this for [mangaplus](https://mangaplus.shueisha.co.jp/manga_list/updated) as well since it is tedious to open each tab one at a time every day/week.
+
 # Project next steps
 - **Future Security Measures Implementation:**
   - Secure sensitive data by implementing encryption.
